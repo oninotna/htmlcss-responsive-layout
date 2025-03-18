@@ -16,7 +16,7 @@ img {
 }
 
 a {
-    text-decoration: none;
+    color: white;
 }
 
 ul {
@@ -76,6 +76,7 @@ header {
     background-color: white;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    box-shadow: 0px 3px 8px #00000055;
 }
 
 .info-plate {
@@ -100,6 +101,7 @@ header {
     background-color: white;
     padding: 10px 15px;
     border-radius: 25px 25px 25px 25px;
+    box-shadow: 0px 3px 8px #00000055;
 }
 
 .fa-facebook {
@@ -128,12 +130,50 @@ header {
 }
 
 .underscore {
-    width: 80px;
+    width: 70px;
     height: 2px;
     background-color: #f7972e;
     margin-top: 1rem;
 }
 
+.story-plate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 4rem;
+}
+
+.story-plate p {
+    line-height: 1.8rem;
+    font-size: 1.1rem;
+}
+
+.footer-section {
+    background-color: #7c69a4;
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.site-credits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.company-address {
+    padding-top: 1rem;
+}
+
+.site-policy ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site-policy li {
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+}
 /* INIZIO MEDIA QUERY TABLET 768PX */
 @media screen and (min-width: 768px) {
     .container {
@@ -170,6 +210,19 @@ header {
         display: inline-block;
         padding-right: 4rem;
         padding-top: 1rem;
+    }
+
+    .social div {
+        padding: 10px 50px;
+    }
+
+    .banner {
+        display: block;
+        margin-bottom: 3rem;
+    }
+
+    .story-plate img {
+        float: left;
     }
 }
 
