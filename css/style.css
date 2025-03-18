@@ -7,6 +7,10 @@
     font-family: Helvetica, sans-serif;
 }
 
+body {
+    background-color: #c5c5c5;
+}
+
 img {
     max-width: 100%;
 }
@@ -34,13 +38,16 @@ ul {
     font-style: normal;
   }
   
+  .none {
+    display: none;
+  }
 
 .container {
-    min-width: none;
+    min-width: 0;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* INIZIO STRUTTURA MOBILE FIRST */
@@ -54,18 +61,139 @@ header {
     text-align: center;
     font-size: 2.7rem;
     padding: 0.5rem 1rem;
+    margin-bottom: 1rem;
     text-shadow: 2px 2px 2px #00000066;
 }
 /* FINE HEADER */
 
+/* INIZIO STRUTTURA PRINCIPALE */
+.type-plate h2 {
+    color: #4e3969; 
+    font-weight: 800;
+}
+
+.plate-card {
+    background-color: white;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.info-plate {
+    padding: 2rem 1.5rem;
+}
+
+.info-plate ul {
+    padding-top: 2rem;
+}
+
+.info-plate li {
+    padding-bottom: 1rem;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.social div {
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.fa-facebook {
+    color: #1a77f3;
+}
+.fa-twitter {
+    color: #009eff;
+}
+.fa-instagram {
+    color: #de3d78;
+}
+.fa-pinterest {
+    color: red;
+}
+.fa-youtube {
+    color: red;
+}
+
+.story-plate h2 {
+    font-size: 1.8rem;
+}
+
+.story-plate img {
+    max-width: 70%;
+    margin: 20px 0;
+}
+
+.underscore {
+    width: 80px;
+    height: 2px;
+    background-color: #f7972e;
+    margin-top: 1rem;
+}
+
 /* INIZIO MEDIA QUERY TABLET 768PX */
 @media screen and (min-width: 768px) {
+    .container {
+       width: 100%;
+       max-width: 720px;
+    }
+
     .page-title {
         text-align: left;
+        margin-bottom: 3rem;
+    }
+
+    .type-plate h2 {
+        font-size: 2rem;
+    }
+
+    .span-title {
+        display: inline-block;
+    }
+    
+    img {
+        min-width: 100%;
+    }
+
+    .info-plate {
+        font-size: 1.1rem;
+    }
+
+    .info-plate ul {
+        padding-top: 3rem;
+    }
+
+    .info-plate li {
+        display: inline-block;
+        padding-right: 4rem;
+        padding-top: 1rem;
     }
 }
 
 /* INIZIO MEDIA QUERY DESKTOP 992PX */
 @media screen and (min-width: 992px) {
+    .container {
+        width: 100%;
+
+    }
+
+    .type-plate h2 {
+        font-size: 3rem;
+    }
+
+    .plate-card {
+        display: flex;
+    }
+
+    .info-plate ul {
+        padding-top: 2rem;
+    }
     
+    .info-plate li {
+        padding-bottom: 1rem;
+        display: block;
+    }
 }
